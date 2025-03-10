@@ -1,11 +1,11 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./styles.css";
 
-function App() {
-  return (
-    <div>
-      <h1>React Calculator</h1>
-    </div>
-  );
-}
-
-export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
